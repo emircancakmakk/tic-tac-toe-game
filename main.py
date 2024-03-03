@@ -79,7 +79,7 @@ def game():
 
     # Loop to alternate players' turns until the game is finished.
     while True:
-        clear_screen()
+        clear_screen() # Clear the screen before each turn
         display_board(position_list)
         player_turn = players[0] if len(available_positions) % 2 == 1 else players[1]
 
